@@ -1,0 +1,154 @@
+1. Foundations
+    Complexity Analysis
+    Time Complexity: Big-O, Big-Theta, Big-Omega
+    Space Complexity & Memory Layout
+    Amortized Analysis
+    Mathematics for DSA
+    Modular Arithmetic
+    GCD, LCM, Euclidean Algorithm
+    Modular Inverse, Fast Exponentiation
+    Prime Numbers (Sieve of Eratosthenes, Segmented Sieve)
+    Combinatorics & Factorials
+
+
+2. Arrays & Strings
+    Array Basics & Traversals
+    Prefix Sum / Difference Array
+    Sliding Window
+    Two Pointer Technique
+    Sorting (Merge Sort, Quick Sort, Counting Sort, Radix Sort)
+    Searching (Binary Search Variants: Lower Bound, Upper Bound)
+    
+    String Manipulation
+    String Hashing (Rabin-Karp)
+    Z-Algorithm
+    KMP Algorithm
+    Manacher’s Algorithm (Longest Palindromic Substring)
+
+3. Recursion & Backtracking
+    Recursion Fundamentals
+    Backtracking Patterns:
+    N-Queens
+    Sudoku Solver
+    Word Search
+    Bitmasking in Backtracking
+    Generating Subsets / Permutations
+
+4. Linked Lists
+    Singly, Doubly, Circular Linked Lists
+    Reversal & Merging
+    Detecting and Removing Cycles (Floyd’s Algorithm)
+    Skip Lists (Advanced)
+
+5. Stacks & Queues
+    Stack Implementations
+    Queue, Circular Queue, Deque
+    Monotonic Stack & Monotonic Queue
+    Min/Max Stack
+    Expression Parsing (Infix → Postfix → Evaluation)
+
+6. Hashing & Maps
+    Hash Functions & Collisions
+    Unordered Map / Set
+    Ordered Map / Set
+    Custom Hashing for Pairs
+    Frequency Hashmaps
+    Cuckoo Hashing (Advanced)
+
+7. Trees
+    Binary Trees
+    Traversals (DFS, BFS, Inorder, Preorder, Postorder)
+    Diameter, Height, Path Sum Problems
+    Binary Search Trees
+    Operations & Properties
+    Balanced BSTs (AVL, Red-Black Tree)
+    Heap / Priority Queue
+    Min/Max Heap
+    Heapify, Heap Sort
+    Trie (Prefix Tree)
+    String Storage, Prefix Search
+    Word Dictionary Problems
+
+8. Graphs
+    Graph Representations (Adjacency List, Matrix)
+    DFS & BFS
+    Topological Sort (Kahn’s Algo, DFS)
+    Shortest Paths
+    Dijkstra
+    Bellman-Ford
+    Floyd-Warshall
+    Minimum Spanning Tree
+    Kruskal (DSU)
+    Prim’s Algorithm
+
+Advanced Topics:
+    Strongly Connected Components (Kosaraju, Tarjan)
+    Bridges & Articulation Points
+    Eulerian Path / Circuit
+    Bipartite Graphs
+    DSU with Path Compression & Union by Rank
+
+9. Advanced Data Structures
+    Segment Tree
+    Range Sum / Min / Max Queries
+    Lazy Propagation
+    Fenwick Tree (Binary Indexed Tree)
+    Sparse Table (RMQ)
+    Disjoint Set Union (with rollback for offline queries)
+    Ordered Set with Order Statistics (Policy Based DS)
+    Treap, Splay Tree
+
+10. Dynamic Programming
+    1D DP
+       Fibonacci, Min Steps, Climbing Stairs
+
+    2D DP
+        Knapsack Variants
+        Matrix Path Problems
+
+    DP on Strings
+        LCS, Edit Distance
+        Palindromic Subsequences
+        Bitmask DP
+
+    DP on Trees
+    
+    DP on Graphs
+
+    State Compression
+        Digit DP
+
+11. Advanced Algorithms
+    Sweep Line Algorithm
+    Mo’s Algorithm (Query Square Root Decomposition)
+    Heavy-Light Decomposition
+    Centroid Decomposition
+    Persistent Data Structures
+    Offline Query Processing
+
+12. Number Theory & Algebra
+    Modular Exponentiation
+    Chinese Remainder Theorem
+    Euler’s Totient Function
+    Matrix Exponentiation
+    FFT (Fast Fourier Transform) for Polynomial Multiplication
+
+13. Computational Geometry
+    Convex Hull (Graham’s Scan, Andrew’s Monotone Chain)
+    Line Intersection
+    Rotating Calipers
+    Closest Pair of Points
+
+14. Special Topics
+    Game Theory (Grundy Numbers, Nim Game)
+    String Automata (Suffix Automaton, Aho-Corasick)
+    Randomized Algorithms (QuickSelect)
+    Probabilistic Data Structures (Bloom Filter)
+
+15. Problem Solving Patterns
+    Greedy
+    Meet in the Middle
+    Divide & Conquer
+    Binary Search on Answer
+    Sliding Window Optimizations
+    Prefix + Hash Combination Tricks

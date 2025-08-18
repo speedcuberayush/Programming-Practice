@@ -1,0 +1,92 @@
+1. Basics of Arrays
+    ✅ Definition & Representation in memory
+    ✅ Static vs Dynamic arrays
+    ✅ Indexing (0-based, 1-based)
+    ✅ Traversal
+    ✅ Input/Output of arrays
+    ✅ Updating elements
+
+2. Basic Operations
+    ✅ Insertion
+    ✅ Deletion
+    ✅ Searching (Linear search, Binary search)
+    ✅ Finding min/max element
+    ✅ Reverse an array
+    ✅ Rotate array (left/right)
+    ✅ Shift array (left/right)
+
+3. Prefix / Suffix Concepts
+    ✅ Prefix sum array
+    ✅ Suffix sum array
+    ✅ Prefix min/max array
+    ✅ Difference array technique
+    ✅ Prefix XOR
+
+4. Subarrays & Subsets
+    Sum of all subarrays
+    Largest subarray sum (Kadane’s algorithm)
+    Maximum/minimum product subarray
+    Count of subarrays with given sum
+    Longest subarray with given sum
+    Subarrays with sum divisible by K
+    Subsets generation (bitmasking, recursion)
+
+5. Sorting
+    ✅ Basic: Bubble, Selection, Insertion
+    ✅ Efficient: Merge Sort, Quick Sort, Heap Sort
+    ✅ Specialized: Counting sort, Radix sort, Bucket sort
+    ✅ Sorting with constraints (sort 0s, 1s, 2s – Dutch National Flag)
+    ✅ Sorting based on frequency or custom comparator
+
+6. Searching in Arrays
+    ✅ Binary Search variations (first/last occurrence, lower/upper bound)
+    ✅ Search in rotated sorted array
+    ✅ Search in nearly sorted array
+    ✅ Ternary search
+
+7. Sliding Window Technique
+    Fixed window problems (max sum of k-length subarray)
+    Variable window problems (longest substring with ≤ k distinct elements)
+    Sliding window + hashmap/frequency array
+
+8. Two Pointer Technique
+    Pair sum problems
+    Triplet sum problems
+    Move zeros to end
+    Segregate positive/negative
+    Merge two sorted arrays in O(1) space (gap method)
+
+9. Hashing + Arrays
+    Frequency counting
+    Index mapping
+    Hash-based subarray problems
+    Detect duplicates in O(n)
+
+10. Matrix / 2D Arrays
+    Traversals (row-wise, column-wise, diagonal)
+    Rotate matrix (90°, 180°, 270°)
+    Transpose matrix
+    Spiral traversal
+    Search in sorted 2D matrix
+    Prefix sum in 2D arrays (2D cumulative sum)
+
+11. Special Array Problems
+    Majority element (Boyer–Moore voting algorithm)
+    Leaders in an array
+    Stock buy and sell problems
+    Trapping rainwater
+    Container with most water
+    Product of array except self
+    Rearranging elements (zigzag, wave)
+
+12. Advanced Data Structures with Arrays
+    Segment Tree
+    Fenwick Tree (Binary Indexed Tree)
+    Sparse Table for RMQ (Range Minimum Query)
+    Disjoint Set Union (DSU) using arrays
+
+13. Optimization & Patterns
+    Meet-in-the-middle
+    Divide and Conquer in array problems
+    Binary Search on answer
+    Monotonic stacks/queues with arrays

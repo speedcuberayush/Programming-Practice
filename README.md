@@ -1,5 +1,5 @@
 <h1 align="center">
-  🚀 My DSA Journey  
+  🚀 DSA   
   <br>
   <img src="https://media.giphy.com/media/L1R1tvI9svkIWwpVYr/giphy.gif" width="60" />
 </h1>

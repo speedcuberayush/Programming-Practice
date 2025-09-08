@@ -75,6 +75,6 @@ if __name__ == "__main__":
     print(sum_and_average([10,20,30,40,50])) # → (150, 30.0)
     print(last_two_elements((10,20,30,40,50))) # → (40,50)
     print(top_student({"A":85, "B":90, "C":78})) # → "B"
-    print(merge_dicts({"x":1}, {"y":2}))  # → {"x":1,"y":2}
+    print(merge_dicts({"x":1}, {"y":2}))  # → {"x":1,"y":2}\
     print(word_in_set("python", {"java","python","c++"})) # → True
     print(word_frequency("this is a test this is")) # → {'this':2,'is':2,'a':1,'test':1}

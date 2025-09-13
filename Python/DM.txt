@@ -1,0 +1,96 @@
+tautology / valid 
+contradiction
+satisfiable : at least 1 T
+contingency : at least 1T 1F 
+
+premises -> conclusion
+(take T)    (check T/F) if T then it comes      
+                        under inference rule
+
+open statement(cannot tell T or F), 
+Domain 
+predicate logic 
+quantifier : tool to get truth value in bulk
+ALL , some  
+
+
+
+
+
+THM1 . sum of degees = 2 X edges
+THM2 . no of odd degree vertices is even
+THM3 . max degree <=(n-1)
+THM4 . max edges <= n(n-1)/2
+
+	total graphs : 2^(n(n-1)/2)
+	number of graph with edges
+         = n(n-1)/2
+                   C
+                    e
+THM6 . min(deg)<= 2e/n <= max(deg)<=n-1
+THM7 . max edges in bipartite graph e<=n2/4
+
+TYPES OF GRAPH 
+1. complete graph(Kn)
+2. regular graph (same number of edges)
+3. cycle graph (Cn)
+4. graph containing cycle
+5. wheel graph (Wn)
+6. Bipartite graph, complete bipartite
+7. star graph
+8. complement
+
+walk, trail(no repeat edge), path
+connect (path exists), disconnected graph(path doesn't exist)
+components
+
+
+
+
+cut edge / bridge : remove a edge to make graph disconnected
+cut edge set / cut set
+edge cut / minimum cut (): min(num of cuts)
+
+cut vertex/ cut point/ articulation point
+: remove a vertex to make graph disconnected
+cut vertex set
+vertex set : removal of min num of vertices from a graph will make graph as disconnected graph
+
+
+euler graph
+
+trail
+closed trail : start and end same vertex
+euler cirxuit : cover all edges + start and end vertex
+    degree of all vertex is even
+
+euler line/trail : cover all edges exactly once but not end at start node
+
+
+Hamilton 
+path
+closed path
+Hamiltonian circuit
+
+
+line graph is both
+independent set : set of non adjacenet vertex
+maximal independent set: cannot add	
+independence no. : no of largest MIS
+
+independent edge set (matching set): non adjacent edges
+
+
+
+planar (no intersection of edge), 
+non planar(intersection of edge)
+K5 non planar
+K33 non planar, regular graph
+-1 edge is planar
+
+euler theoram
+
+ n-e+f=2
+
+finite-infinite region, bounded
+

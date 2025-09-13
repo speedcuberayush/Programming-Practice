@@ -1,43 +1,36 @@
-#include <bits/stdc++.h>
-using namespace std;
-#define MOD 1000000007
-
-int main()
-{
-    int t;
-    cin >> t;
-    while (t--)
-    {
-        int n, m, k;
-        cin >> n >> m >> k;
-        vector<int> g(k);
-        for (auto &x : g)
-            cin >> x;
-        if (m == 1)
-        {
-            cout << 1 << "\n";
-            continue;
-        }
-        unordered_set<int> win = {1};
-        for (int p = 2; p <= n; p++)
-        {
-            unordered_set<int> cur;
-            bool turn = (n - p) % 2 == 0;
-            for (int s = 0; s < (1 << p); s++)
-            {
-                if ((turn && any_of(g.begin(), g.end(), [&](int i)
-                                    { int ns = (s & ((1<<(i-1))-1)) | ((s>>i)<<(i-1)); return i <= p && win.count(ns); })) ||
-                    (!turn && all_of(g.begin(), g.end(), [&](int i)
-                                     { int ns = (s & ((1<<(i-1))-1)) | ((s>>i)<<(i-1)); return i > p || win.count(ns); })))
-                    cur.insert(s);
+class Solution {
+public:
+    int searchInsert(vector<int>& nums, int target) {
+        
+        int s=0;
+        int e=nums.size()-1;
+        int ans=e+1;
+        while(s<=e){
+        
+            int mid=(s+e)/2;
+            if(nums[mid]>=target) {
+                ans=mid;
+                e=mid-1;
             }
-            win = move(cur);
+            else s=mid+1;
         }
-        long long r = 1, b = 2, e = n;
-        for (b %= MOD; e; e >>= 1, b = b * b % MOD)
-            if (e & 1)
-                r = r * b % MOD;
-
-        cout << (r + win.size()) % MOD << "\n";
+        return ans;
     }
-}
+};
+
+class Solution {
+public:
+    int searchInsert(vector<int>& nums, int target) {
+        int s = 0, e = nums.size() - 1, ans = nums.size();
+        while (s <= e) {
+            int mid = (s + e) / 2;
+            if (nums[mid] >= target) {
+                ans = mid;
+                e = mid - 1;  // search left side
+            } else {
+                s = mid + 1;  // search right side
+            }
+        }
+        return ans;
+    }
+};

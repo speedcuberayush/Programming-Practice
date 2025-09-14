@@ -7,81 +7,44 @@ Plane	Parallel array of blocks for faster access
 Die	An independent NAND unit; multiple dies per chip
 Cell	Stores 1 to 4 bits of data (SLC/MLC/TLC/QLC)
 
-UniPro (Unified Protocol)
-MIPI M-PHY
+Inquiry (12h)
+Test Unit Ready (00h)
+Request Sense (03h)
+Read (various opcodes like 08h, 08h, ADh for 6, 10, 16 byte respectively)
+Write (various opcodes like 0Ah, 0Ah, ADh for 6, 10, 16 byte respectively)
+Mode Sense (1Ah, 5Ah)
+Mode Select (15h, 55h)
+Synchronize Cache (35h)
+Start/Stop Unit (1Bh)
+Send Diagnostic (1Dh)
+Log Select (4Ch)
+Log Sense (4Dh)
+Report LUNs (A0h)
 
-🔹 1. Flash Storage Fundamentals
+Admin Commands
+These commands manage the NVMe controller and its namespaces.
 
-video : Basics of NAND Flash (SLC, MLC, TLC, QLC)
-video : SSD architecture: FTL (Flash Translation Layer), wear leveling, garbage collection, TRIM
-gpt : Concepts of UFS, eMMC, NVMe, SATA, SCSI
-gpt : Endurance, reliability, error handling (ECC, bad block management)
+Identify (06h)
+Get Features / Set Features (0Ah / 09h)
+Get Log Page (02h)
+Firmware Commit / Download (10h / 11h)
+Create/Delete I/O Submission Queue (01h / 00h)
+Create/Delete I/O Completion Queue (05h / 04h)
+Format NVM (80h)
+Namespace Management (0Dh)
+Abort (08h)
+Sanitize (84h)
+Reset (13h)
+Subsystem Reset (13h)
+AER
 
-🔹 2. Protocols Knowledge (Host Interfaces)
-You must understand how storage devices talk to the system.
-
-gpt: Protocols to Study:
-📌 eMMC, UFS (primary) 
-SATA, SCSI, PCIe, NVMe (added advantage)
-
-What to Focus On:
-Command sequences, LUNs, Queues
-How data is read/written/transferred
-operation flow and list of common operations 
-Use protocol analyzers (e.g., Lecroy, TotalPhase)
-
-🔹 3. Firmware and Embedded Systems
-You need to understand firmware algorithms in flash devices.
-
-Topics:
-
-gpt : Real-time embedded systems
-gpt : RTOS basics, interrupts, scheduling
-gpt : Boot process in flash devices
-gpt : Data path inside firmware
-gpt : Power loss management
-
-🔹 4. Validation and Testing
-Manual vs automated testing
-Writing test cases for embedded devices
-Regression testing, boundary testing
-End-to-end scenarios: how firmware, hardware, and protocol work together
-
-🔹 5. Debugging and Failure Analysis
-You should be able to analyze trace logs and identify failures.
-
-Tools to Study:
-Protocol Analyzers (LeCroy CATC, TotalPhase, Logic Analyzer)
-Logic analyzers, oscilloscopes (basic idea)
-Trace viewers (internal at Sandisk, but understand general ones)
-
-
-🔹 6. Software Development & Tools
-gpt : Python: automation, data parsing, plotting
-C/C++: understanding embedded code
-Shell scripting: test setups, automation
-
-
-🔹 7. System Knowledge
-You must understand how the device interacts with various systems:
-
-Study:
-
-File systems: FAT32, exFAT, ext4 (common in mobile & industrial)
-
-Mobile OS: Android device boot sequence and how UFS is used
-
-Linux basics (for device validation environments)
-
-dmesg, lsblk, iostat, smartctl
-
-🔹 9. Bonus (Advanced Topics)
-If time permits:
-
-Signal integrity basics (for digital design understanding)
-Power management in NAND systems
-Thermal management and its effect on flash endurance
-
-Voyager M310e USB Type-C : Analyzer
-
-
+I/O Commands (NVM Commands)
+These commands perform data read and write operations.
+Read (02h)
+Write (01h)
+Flush (00h)
+Dataset Management (09h) (Includes TRIM/Deallocate and Write Hint)
+Compare (05h)
+Write Zeroes (08h)
+Write Uncorrectable (04h)
+Verify (0Ch)

@@ -1,5 +1,4 @@
 As a Principal Engineer, you will be at the forefront of designing and implementing cutting-edge solutions and monitoring infra tools and systems deployment that shape the future of our products.
-
 Working on the development of technical strategies and roadmaps to guide long-term engineering initiatives
 Collaborate with cross-functional teams to work on requirements and by understanding them deeper into technical specifications
 Provide mentorship to engineering teams, fostering a culture of innovation and continuous improvement
@@ -26,10 +25,6 @@ Familiarity with monitoring, logging, and observability tools and practices
 Strong analytical mindset with attention to detail and a data-driven approach to decision-making
 Ability to balance technical excellence with pragmatic solutions to meet business objectives
 
-
-1. NAND Flash & Firmware Concepts
-Goal: Understand how firmware manages NAND flash devices.
-
 📘 Core Topics:
 NAND flash fundamentals (SLC/MLC/TLC/QLC)
 FTL (Flash Translation Layer)
@@ -38,10 +33,6 @@ Bad block management and ECC (Error Correction Code)
 Power loss management in NAND
 Bootloader and boot processes in embedded systems
 
-🛠 Tools to learn:
-Logic analyzers, protocol analyzers (e.g., Lecroy, TotalPhase)
-JTAG/UART debugging
-
 ✅ 2. Storage Protocols
 Goal: Master host interface protocols and their command flows.
 
@@ -49,50 +40,8 @@ Goal: Master host interface protocols and their command flows.
 UFS, eMMC – mobile & embedded storage
 SCSI (used in UFS command layer)
 Command layer: SCSI over UPIU (UFS Protocol Information Unit)
-📘 Added Advantage (Know basics): NVMe, PCIe, SATA
-
-🔍 Key Concepts:
-Command sequences (read, write, flush, trim, etc.)
-LUNs (Logical Unit Numbers), Queues, Descriptors
-Data paths from host to NAND and back
-
-3. Validation & Testing Knowledge
-Goal: Build and run test suites and analyze failures.
-
-📘 Testing Concepts:
-
-Regression testing, functional & compatibility testing
-Test coverage in real-time embedded systems
-Black box & white box testing for storage
-Automated testing for firmware & hardware
-
-🧪 What to Learn:
-
-Writing custom test scripts (Python/C++)
-Analyzing test logs and validation reports
-Using protocol traces to debug failures
-Fault injection & corner case testing
-
-✅ 4. Programming & Debugging
-Goal: Write tools and debug firmware/hardware interactions.
-
-📘 Languages:
-
-Python: Scripting test cases, automation, trace analysis
-C/C++: Firmware-level testing and debugging
-Shell scripting: Linux-based test environments
-
-🛠 Skills:
-
-Memory dump analysis
-Stack trace reading
-Instrumenting code for debugging (print logs, assert handling)
-
-✅ 5. Operating Systems & File Systems
-Goal: Understand how the OS interacts with storage.
 
 📘 Operating Systems:
-
 Linux (kernel logs: dmesg, device probing: lsblk, iostat, smartctl)
 Android (especially for UFS/eMMC)
 Basic mobile/computer OS storage stack
@@ -100,20 +49,3 @@ Basic mobile/computer OS storage stack
 📁 File Systems:
 FAT32, exFAT, ext4
 How file systems affect read/write patterns and wear
-
-✅ 6. Tools & Debugging Infrastructure
-Goal: Use tools to inspect hardware/software interactions.
-
-🛠 Tools:
-Protocol analyzers: Understand trace formats
-JTAG/debug ports for embedded boards
-Trace viewers: Lecroy USB Suite, TotalPhase Data Center, UFS Command Viewer (if available)
-
-
-
-✅ 8. Bonus (if you want to stand out)
-📘 Digital and Analog Design Basics:
-
-Digital logic, state machines, timing diagrams
-Basics of signal integrity and layout (for board-level validation)
-

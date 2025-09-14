@@ -1,11 +1,10 @@
-LUNS in SCSI
-Descriptors in USB
-TMIU - Task management information unit
-Resets 
+* LUNS in SCSI
+* Descriptors in USB
+* TMIU - Task management information unit
+* Resets 
 GSD vs UGSD
 Commands and their role 
 Endpoints
-
 
 
 1. LUN = Logical Unit Number.(book and chapters)

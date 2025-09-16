@@ -7,19 +7,20 @@ Plane	Parallel array of blocks for faster access
 Die	An independent NAND unit; multiple dies per chip
 Cell	Stores 1 to 4 bits of data (SLC/MLC/TLC/QLC)
 
-Inquiry (12h)
-Test Unit Ready (00h)
-Request Sense (03h)
+Inquiry (12h) : device information and controller configurations such and product details 
+Test Unit Ready (00h) : check weather the controller is ready to accept the command 
+Request Sense (03h) : after a command failure the detailed description is provided
 Read (various opcodes like 08h, 08h, ADh for 6, 10, 16 byte respectively)
 Write (various opcodes like 0Ah, 0Ah, ADh for 6, 10, 16 byte respectively)
-Mode Sense (1Ah, 5Ah)
-Mode Select (15h, 55h)
+Mode Sense (1Ah, 5Ah) : gives the current mode, configuraiton 
+Mode Select (15h, 55h) : updates the current mode , configuraiton with the parameteres 
 Synchronize Cache (35h)
 Start/Stop Unit (1Bh)
 Send Diagnostic (1Dh)
 Log Select (4Ch)
 Log Sense (4Dh)
 Report LUNs (A0h)
+UnMAP(): unmaps or frees the LBA for the host 
 
 Admin Commands
 These commands manage the NVMe controller and its namespaces.
